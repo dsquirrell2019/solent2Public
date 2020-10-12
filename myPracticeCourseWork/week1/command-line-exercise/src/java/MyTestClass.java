@@ -1,5 +1,5 @@
 /*
- * This is not javadoc - usually licence goes here
+ * This is not javadoc - usually the licence goes here
  */
 
 /**
@@ -10,7 +10,7 @@ public class MyTestClass {
 
    public static void main(String[] args) {
       
-       // this is a local comment which doesnt go in javadoc
+       // this is a local comment which doesn't go in javadoc
        MyTestClass myTestClass = new MyTestClass();
        myTestClass.writeAboutMe();
         
