@@ -7,10 +7,10 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
-<%@ page import="org.solent.com504.oodd.week2.model.ShoppingService" %>
-<%@ page import="org.solent.com504.oodd.week2.model.ShoppingCart" %>
-<%@ page import="org.solent.com504.oodd.week2.model.ShoppingItem" %>
-<%@ page import="org.solent.com504.oodd.week2.web.WebObjectFactory"%>
+<%@ page import="org.solent.com504.oodd.cart.model.service.ShoppingService" %>
+<%@ page import="org.solent.com504.oodd.cart.model.service.ShoppingCart" %>
+<%@ page import="org.solent.com504.oodd.cart.model.dto.ShoppingItem" %>
+<%@ page import="org.solent.com504.oodd.cart.web.WebObjectFactory"%>
 <%
     request.setAttribute("selectedPage", "home");
     String message="";
@@ -92,7 +92,7 @@
             <td>
                 <!-- post avoids url encoded parameters -->
                 <form action="./home.jsp" method="get">
-                    <input type="hidden" name="itemUUID" value="<%=item.getUuuid()%>">
+                    <input type="hidden" name="itemUUID" value="<%=item.getUuid()%>">
                     <input type="hidden" name="action" value="removeItemFromCart">
                     <button type="submit" >Remove Item</button>
                 </form> 
